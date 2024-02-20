@@ -8,9 +8,13 @@ namespace classes_with_inheritance
 {
     internal class Cat : Animal
     {
-        public override void Eat()
+        public Cat() : base()
         {
-            Console.WriteLine($"{Name} is eating tuna.");
+
+        }
+        public override string Eat()
+        {
+            return " is eating tuna";
         }
     }
 }

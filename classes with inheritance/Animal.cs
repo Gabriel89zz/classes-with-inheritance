@@ -9,15 +9,22 @@ namespace classes_with_inheritance
 {
     internal class Animal
     {
-        public string Name { get; set; }
+        private string name;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 
         public Animal()
         {
             Name = "";
         }
-        public virtual void Eat()
+
+        public virtual string Eat()
         {
-            Console.WriteLine($"{Name} is eating.");
+            return " is eating";
         }
     }
 }

@@ -9,9 +9,13 @@ namespace classes_with_inheritance
 {
     internal class Dog:Animal
     {
-        public override void Eat()
+        public Dog():base()
         {
-            Console.WriteLine($"{Name} is eating croquetes");
+                
+        }
+        public override string Eat()
+        {
+            return " is eating croquetes";
         }
     }
 }
