@@ -11,9 +11,13 @@ namespace classes_with_inheritance
     {
         public string Name { get; set; }
 
+        public Animal()
+        {
+            Name = "";
+        }
         public virtual void Eat()
         {
-            Console.WriteLine($"{Name} está comiendo.");
+            Console.WriteLine($"{Name} is eating.");
         }
     }
 }
